@@ -5,14 +5,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4d9661e-2973-47f0-9e6c-397b03e08892" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/front-web/src/Orders/OrderLocation.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/.expo-shared/assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/assets/adaptive-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/assets/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/assets/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/assets/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/src/Header/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/src/Home/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/src/OrderCard/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/src/OrderDetails/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/src/Orders/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/src/Routes.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/src/api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/src/assets/deliveryman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/src/assets/deliveryman@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/src/assets/deliveryman@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/src/assets/logo@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/src/assets/logo@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/src/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-mobile/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-web/.eslintcache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-web/public/_redirects" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-web/src/Orders/OrderSummary.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-web/src/Orders/ProductsList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-web/src/Orders/StepsHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-web/src/Orders/helpers.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/src/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/src/Footer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/src/Footer/instagram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/src/Footer/instagram.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/src/Footer/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/src/Footer/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/src/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/src/Home/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/src/Home/main.svg" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/src/Home/main.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/src/Home/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/src/Home/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/src/Navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/src/Navbar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/src/Navbar/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/src/Navbar/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/src/Navbar/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/src/Navbar/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/src/Orders/OrderLocation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/src/Orders/OrderLocation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/src/Orders/ProductCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/src/Orders/ProductCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/src/Orders/ProductList.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/front-web/src/Orders/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/src/Orders/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/src/Orders/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/src/Orders/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/src/Orders/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/src/Orders/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/src/Routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/src/Routes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/src/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/src/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/src/react-app-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/src/react-app-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-web/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-web/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,6 +86,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="DsdeliverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -52,6 +108,7 @@
       <workItem from="1622994422067" duration="636000" />
       <workItem from="1622995110483" duration="95000" />
       <workItem from="1623263574826" duration="25000" />
+      <workItem from="1623347148307" duration="22000" />
     </task>
     <servers />
   </component>
