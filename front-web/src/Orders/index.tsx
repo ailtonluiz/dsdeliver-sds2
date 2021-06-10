@@ -1,33 +1,34 @@
-import { useEffect, useState } from 'react'
-import { toast } from 'react-toastify'
-
-import { fetchProducts, saveOrder } from '../api'
-import Footer from '../Footer'
-import { checkIsSelected } from './helpers'
-import OrderLocation from './OrderLocation'
-import OrderSummary from './OrderSummary'
-import ProductsList from './ProductsList'
-import StepsHeader from './StepsHeader'
-import './styles.css'
-import { OrderLocationData, Product } from './types'
+import { useEffect, useState } from 'react';
+import { toast } from 'react-toastify';
+import StepsHeader from './StepsHeader';
+import ProductsList from './ProductsList';
+import { OrderLocationData, Product } from './types';
+import { fetchProducts, saveOrder } from '../api';
+import OrderLocation from './OrderLocation';
+import OrderSummary from './OrderSummary';
+import Footer from '../Footer';
+import { checkIsSelected } from './helpers';
+import './styles.css';
 
 function Orders() {
-  const [products, setProducts] = useState<Product[]>([])
-  const [selectedProducts, setSelectedProducts] = useState<Product[]>([])
-  const [orderLocation, setOrderLocation] = useState<OrderLocationData>()
+  const [products, setProducts] = useState<Product[]>([]);
+  const [selectedProducts, setSelectedProducts] = useState<Product[]>([]);
+  const [orderLocation, setOrderLocation] = useState<OrderLocationData>();
   const totalPrice = selectedProducts.reduce((sum, item) => {
-    return sum + item.price
-  }, 0)
+    return sum + item.price;
+  }, 0);
 
   useEffect(() => {
     fetchProducts()
       .then(response => setProducts(response.data))
-      .catch(error => toast.warning("Erro ao listar produtos!"))
-  }, [])
+      .catch(() => {
+        toast.warning('Erro ao listar produtos');
+      })
+  }, []);
 
   const handleSelectProduct = (product: Product) => {
     const isAlreadySelected = checkIsSelected(selectedProducts, product);
-  
+
     if (isAlreadySelected) {
       const selected = selectedProducts.filter(item => item.id !== product.id);
       setSelectedProducts(selected);
@@ -42,7 +43,7 @@ function Orders() {
       ...orderLocation!,
       products: productsIds
     }
-  
+
     saveOrder(payload)
       .then((response) => {
         toast.error(`Pedido enviado com sucesso! Nº ${response.data.id}`);
@@ -57,23 +58,23 @@ function Orders() {
     <>
       <div className="orders-container">
         <StepsHeader />
-        <ProductsList 
+        <ProductsList
           products={products}
-          onSelectProduct={handleSelectProduct}  
+          onSelectProduct={handleSelectProduct}
           selectedProducts={selectedProducts}
         />
-        <OrderLocation 
-          onChangeLocation={location => setOrderLocation(location)} 
+        <OrderLocation
+          onChangeLocation={location => setOrderLocation(location)}
         />
-        <OrderSummary 
-          amount={selectedProducts.length} 
+        <OrderSummary
+          amount={selectedProducts.length}
           totalPrice={totalPrice}
-          onSubmit={handleSubmit}  
+          onSubmit={handleSubmit}
         />
       </div>
       <Footer />
     </>
-  ) 
+  )
 }
 
-export default Orders
+export default Orders;

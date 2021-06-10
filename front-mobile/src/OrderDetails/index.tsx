@@ -1,7 +1,6 @@
 import React from 'react';
-import { StyleSheet, View, Text, Alert, Linking } from 'react-native';
-import "intl/locale-data/jsonp/pt-BR.js";
 import { useNavigation } from '@react-navigation/native';
+import { StyleSheet, View, Text, Alert, Linking } from 'react-native';
 import Header from '../Header';
 import { Order } from '../types';
 import OrderCard from '../OrderCard';
@@ -11,39 +10,39 @@ import { confirmDelivery } from '../api';
 type Props = {
   route: {
     params: {
-      order: Order
+      order: Order;
     }
   }
 }
 
-export default function OrderDetails({ route }: Props) {
-  const { order } = route.params
-  const navigation = useNavigation()
+function OrderDetails({ route }: Props) {
+  const { order } = route.params;
+  const navigation = useNavigation();
 
   const handleOnCancel = () => {
-    navigation.navigate("Orders")
+    navigation.navigate('Orders');
   }
 
   const handleConfirmDelivery = () => {
     confirmDelivery(order.id)
       .then(() => {
-        Alert.alert(`Pedido ${order.id} confirmado com sucesso`)
-        navigation.navigate('Orders')
+        Alert.alert(`Pedido ${order.id} confirmado com sucesso!`);
+        navigation.navigate('Orders');
       })
       .catch(() => {
-        Alert.alert(`Houve um erro ao confirmar o pedido ${order.id}`)
+        Alert.alert(`Houve um erro ao confirmar o pedido ${order.id}`);
       })
   }
 
   const handleStartNavigation = () => {
-    Linking.openURL(`https://www.google.com/maps/dir/?api=1&travelmode=driving&dir_action=navigate&destination=${order.latitude},${order.longitude}`)
+    Linking.openURL(`https://www.google.com/maps/dir/?api=1&travelmode=driving&dir_action=navigate&destination=${order.latitude},${order.longitude}`);
   }
 
   return (
     <>
       <Header />
       <View style={styles.container}>
-        <OrderCard order={order}/>
+        <OrderCard order={order} />
         <RectButton style={styles.button} onPress={handleStartNavigation}>
           <Text style={styles.buttonText}>INICIAR NAVEGAÇÃO</Text>
         </RectButton>
@@ -61,7 +60,8 @@ export default function OrderDetails({ route }: Props) {
 const styles = StyleSheet.create({
   container: {
     paddingRight: '5%',
-    paddingLeft: '5%'
+    paddingLeft: '5%',
+    backgroundColor: '#F5F5F5'
   },
   button: {
     backgroundColor: '#DA5C5C',
@@ -83,3 +83,5 @@ const styles = StyleSheet.create({
     fontFamily: 'OpenSans_700Bold'
   }
 });
+
+export default OrderDetails;

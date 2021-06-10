@@ -1,7 +1,7 @@
-import './styles.css'
-import { ReactComponent as MainImage } from './main.svg'
-import Footer from '../Footer'
-import { Link } from 'react-router-dom'
+import './styles.css';
+import { ReactComponent as MainImage } from './main.svg';
+import Footer from '../Footer';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -13,11 +13,12 @@ function Home() {
               Faça seu pedido <br /> que entregamos <br /> pra você!!!
             </h1>
             <h3 className="home-subtitle">
-              Escolha o seu pedido e em poucos minutos <br /> levaremos na sua porta
+              Escolha o seu pedido e em poucos minutos <br />
+              levaremoss na sua porta
             </h3>
-            <Link className="home-btn-order" to="/orders">
+            <Link to="/orders" className="home-btn-order">
               FAZER PEDIDO
-          </Link>
+            </Link>
           </div>
           <div className="home-image">
             <MainImage />
@@ -29,4 +30,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Home;

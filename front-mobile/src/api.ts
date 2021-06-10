@@ -1,11 +1,11 @@
-import axios from "axios"
+import axios from "axios";
 
-const API_URL = 'https://artur-sds2.herokuapp.com'
+const API_URL = 'https://nelio-aulas-sds2.herokuapp.com';
 
 export function fetchOrders() {
-  return axios(`${API_URL}/orders`)
-} 
+  return axios(`${API_URL}/orders`);
+}
 
 export function confirmDelivery(orderId: number) {
-  return axios.put(`${API_URL}/orders/${orderId}/delivered`)
+  return axios.put(`${API_URL}/orders/${orderId}/delivered`);
 }

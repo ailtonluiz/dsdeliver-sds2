@@ -1,39 +1,32 @@
+import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime';
 import React from 'react';
-import { StyleSheet, View, Text, Platform } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { Order } from '../types';
-import dayjs from 'dayjs'
-import 'dayjs/locale/pt-br'
-import relativeTime from 'dayjs/plugin/relativeTime'
-import "intl";
-import "intl/locale-data/jsonp/pt-BR.js";
+import 'dayjs/locale/pt-br';
 
-if (Platform.OS === "android") {
-    if (typeof (Intl as any).disableRegExpRestore === "function") {
-        (Intl as any).disableRegExpRestore();
-    }
-}
-
-dayjs.locale('pt-br')
-dayjs.extend(relativeTime)
+dayjs.extend(relativeTime);
+dayjs.locale('pt-br');
 
 type Props = {
-  order: Order
+  order: Order;
 }
 
 function dateFromNow(date: string) {
-  return dayjs(date).fromNow()
+  return dayjs(date).fromNow();
 }
 
-function formatPrice(price: number) {
+export function formatPrice(price: number) {
   const formatter = new Intl.NumberFormat('pt-BR', {
     style: 'currency',
-    currency: 'BRL'
-  })
+    currency: 'BRL',
+    minimumFractionDigits: 2
+  });
 
-  return formatter.format(price)
+  return formatter.format(price);
 }
 
-export default function OrderCard({ order }: Props) {
+function OrderCard({ order }: Props) {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -101,3 +94,5 @@ const styles = StyleSheet.create({
     paddingTop: 15
   }
 });
+
+export default OrderCard;
